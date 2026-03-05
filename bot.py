@@ -1,3 +1,4 @@
+import os
 from telegram import Update, ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import (
     ApplicationBuilder, CommandHandler, MessageHandler,
@@ -6,7 +7,7 @@ from telegram.ext import (
 import random
 
 # ========== НАСТРОЙКИ ==========
-TOKEN = "8748444737:AAG1n8wYlE5INANgW7CqoE8s9y7BiTqx2FQ"
+TOKEN = os.environ.get"8748444737:AAG1n8wYlE5INANgW7CqoE8s9y7BiTqx2FQ"
 ADMIN_ID = 7006835550
 
 # ========== РЕКВИЗИТЫ ==========
@@ -408,3 +409,4 @@ app.add_handler(CallbackQueryHandler(operator_filter, pattern="^op_"))
 
 print("✅ НомерМаркет бот запущен!")
 app.run_polling()
+
