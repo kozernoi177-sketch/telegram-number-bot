@@ -409,5 +409,3 @@ app.add_handler(CallbackQueryHandler(operator_filter, pattern="^op_"))
 
 print("✅ НомерМаркет бот запущен!")
 app.run_polling()
-
-
