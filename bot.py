@@ -7,7 +7,7 @@ from telegram.ext import (
 import random
 
 # ========== НАСТРОЙКИ ==========
-TOKEN = os.environ.get"8748444737:AAG1n8wYlE5INANgW7CqoE8s9y7BiTqx2FQ"
+TOKEN = os.environ.get("TOKEN")
 ADMIN_ID = 7006835550
 
 # ========== РЕКВИЗИТЫ ==========
@@ -409,4 +409,5 @@ app.add_handler(CallbackQueryHandler(operator_filter, pattern="^op_"))
 
 print("✅ НомерМаркет бот запущен!")
 app.run_polling()
+
 
